@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cities</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: black;
+            padding: 5px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: overflow: hidden;
+            ;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px;
+            /* only for demonstration, should be removed */
+        }
+
+        /* Clear floats after the columns */
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+   
+
+    <header>
+        <h2>City Gallery</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+
+                <br />
+                
+                <li><a href="london.html">London</a></li>
+                <li><a href="paris.html">Paris</a></li>
+                <li><a href="tokyo.html">Tokyo</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Paris</h1>
+            <p>Paris is the capital city of France. It is the most populous city in France, with a
+                metropolitan area of over 8 million inhabitants.</p>
+            <p>Standing on the River Seine, Paris has been a major settlement for two millennia, its history going
+                back to its founding by the Romans, who named it Parisii.</p>
+        </article>
+        <div class="paris.png">
+            <img src="paris.png" >
+             
+            </div>
+    </a>
+    </section>
+
+    <footer>
+        <p>Christian Mieres CIS 385</p>
+    </footer>
+
+</body>
+
+</html>
